@@ -1,0 +1,162 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  border: 1px dotted red;
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  grid-template-rows: 72px 1fr 80px;
+  background: linear-gradient(164.68deg, #ea1b0a 0%, #1ea2b1 99.72%);
+}
+
+body * {
+  border: 0px dotted lime;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+main {
+  max-width: 960px;
+  margin: 60px auto 0px;
+}
+
+section > img {
+  width: 100%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 40px;
+  margin-bottom: 60px;
+}
+
+section#goto-prototype {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 100px;
+  margin-bottom: 50px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+}
+
+article > *:first-child {
+  grid-column: 1/3;
+}
+
+p {
+  font: 16px "PT Serif";
+}
+
+.profile {
+  margin-bottom: 140px;
+}
+.profile__description {
+  font: 24px "PT Serif";
+  padding-bottom: 50px;
+}
+.profile__name {
+  font: 12px "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.profile__title {
+  font: 14px "PT Serif";
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 110%;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+}
+
+.logos > img {
+  max-width: 100%;
+}
+
+#get-the-book input {
+  background-color: #172751;
+  width: calc(100% + 5px);
+}
+
+button {
+  background-color: #5c22ff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  height: 50px;
+}
+
+#get-the-book {
+  position: relative;
+  margin: 25px 0;
+  display: grid;
+  width: 100%;
+  height: 50px;
+  grid-template-columns: auto 140px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.logos > img {
+  opacity: 0;
+}
+
+#logo-1 {
+  animation: fade-in 1.5s ease 1.2s forwards;
+}
+#logo-2 {
+  animation: fade-in 1.5s ease 1.4s forwards;
+}
+#logo-3 {
+  animation: fade-in 1.5s ease 1.6s forwards;
+}
+#logo-4 {
+  animation: fade-in 1.5s ease 1.8s forwards;
+}
+#logo-5 {
+  animation: fade-in 1.5s ease 2s forwards;
+}
+#logo-6 {
+  animation: fade-in 1.5s ease 2.2s forwards;
+}
+
+#iphone {
+  transform: rotate(-20);
+}
